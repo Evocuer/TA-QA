@@ -1,0 +1,4 @@
+# Directorios a ignorar
+
+.idea*
+target*
