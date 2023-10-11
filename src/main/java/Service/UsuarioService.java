@@ -22,4 +22,13 @@ public class UsuarioService {
         System.out.println("Usuario creado correctamente");
     }
 
+    public Usuario login (String user, String password) {
+
+        for (Usuario aux: userList) {
+            aux.
+        }
+
+
+    }
+
 }

@@ -1,8 +1,13 @@
 package Entity;
 
-import lombok.Data;
 
-@Data
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
 public class Usuario {
     private String username;
     private String password;
