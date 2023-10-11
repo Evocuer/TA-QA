@@ -1,16 +1,11 @@
 package Entity;
 
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@ToString
+@Data
 public class Cuenta {
 
-    private Usuario usuario;
     private String idCuenta;
     private Double balance;
 
@@ -18,12 +13,6 @@ public class Cuenta {
     private static int ID2_CUENTA = 0;
 
     public Cuenta() {
-        this.idCuenta = genIdCuenta();
-        this.balance = 0d;
-    }
-
-    public Cuenta(Usuario usuario) {
-        this.usuario = usuario;
         this.idCuenta = genIdCuenta();
         this.balance = 0d;
     }

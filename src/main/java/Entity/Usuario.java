@@ -1,25 +1,24 @@
 package Entity;
 
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@ToString
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
 public class Usuario {
     private String username;
-    private String password;
     private Boolean tipo;
+    private List<Cuenta> cuentas;
 
     public Usuario() {
     }
 
-    public Usuario(String username, String password, Boolean tipo) {
+    public Usuario(String username, Boolean tipo) {
         this.username = username;
-        this.password = password;
         this.tipo = tipo; //True: admin / false: regular user
+        this.cuentas = new ArrayList<>();
     }
 
 
